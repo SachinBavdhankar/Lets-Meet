@@ -1,0 +1,177 @@
+header {
+    /* this is for the navBar resizing */
+    height: 65px;
+    background: black;
+    margin-top: -15px;
+    width: 100%;
+    
+}
+
+.ClearBuffer {
+    clear: both;
+}
+
+header .name {
+    margin-top: 10px;
+}
+
+header .name h1 {
+    color: white;
+    font-style: italic;
+    padding: 14px 16px;
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: -15px;
+    padding: -10px;
+    overflow: hidden;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 14px 16px;
+    padding-right: 35px;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    background-color: grey;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/*Buttons */
+.buttons {
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    width: 200px;
+    height: 80px;
+    border-radius: 1em;
+}
+
+.btn.profile {
+    background-color: #3b5998;
+}
+
+.btn.show {
+    background-color: #2ecc71;
+}
+
+.btn.choice {
+    background-color: #e67e22;
+}
+
+.btn.delete {
+    background-color: #E50914;
+}
+
+.btn.log {
+    background-color: #4b4b4b;
+}
+
+.btn.sub {
+    background-color: #17c0eb;
+}
+
+.btn.sub:hover {
+    background-color: #17c0eb;
+    width: 120px;
+    height: 65px;
+}
+
+.btn.res {
+    background-color: #ff3838;
+}
+
+.btn.res:hover {
+    background-color: #ff3838;
+    width: 120px;
+    height: 65px;
+}
+
+/* Iframes*/
+iframe {
+    margin-top: 5%;
+    margin-left: 10px;
+    width: 98%;
+    height: 380px;
+    /* border-style: dashed; */
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    font-size: 1.2em;
+    height: 100%;
+}
+
+form {
+    margin-left: 36%;
+    line-height: 1.8em;
+}
+
+input[type=text],
+input[type=password] {
+    width: 150px;
+    height: 30px;
+}
+
+/* User Matches tables*/
+.user_body {
+    /* border-style: dashed; */
+    margin-left: 21%;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    min-width: 400px;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tr {
+    border-bottom: 1px solid silver;
+}

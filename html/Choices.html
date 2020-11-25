@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Choices </title>
+  <link rel="stylesheet" href="../css/choices_style.css">
+</head>
+
+<body>
+  <header>
+    <nav id="navBar">
+      <ul>
+        <li><a href="./LMHome.html">Home</a></li>
+        <li><a href="./Tutorial.html">Tutorial</a></li>
+        <li><a href="./AboutUs.html">About Us</a></li>
+        <li><a href="./Contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="name">
+      <h1>Let's Meet up</h1>
+    </div>
+  </header>
+  <div class="slidershow middle">
+
+    <div class="slides">
+      <input type="radio" name="r" id="r1" checked>
+      <input type="radio" name="r" id="r2">
+      <input type="radio" name="r" id="r3">
+      <input type="radio" name="r" id="r4">
+      <input type="radio" name="r" id="r5">
+      <div class="slide s1">
+        <div class="content">
+          <h1>
+            <center><span class="bookshead">Books</span></center>
+          </h1>
+          <form action="../php/choices.php" method="POST">
+            <span>1. Which languages of book do like to read:<font color="red">*</font>
+            </span><br><select id="booklanguage" name="booklanguage">
+              <option value="" default>N/A</option>
+              <option value="Engish">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Others">Others</option>
+            </select><br><br>
+
+            <span>2. What is Genre of books you like: <font color="red">*</font></span><br><select id="bookgenre"
+              name="bookgenre">
+              <option value="" default>N/A</option>
+              <option value="Fiction">Fiction</option>
+              <option value="SelfHelp">Self Help</option>
+              <option value="Horror">Horror</option>
+              <option value="Suspense">Suspense</option>
+              <option value="Educational">Educational</option>
+              <option value="Romantic">Romantic</option>
+              <option value="Biography">Biography</option>
+              <option value="Novel">Novel</option>
+            </select><br><br>
+
+            <span>3.Do you like comics:<font color="red">*</font></span><br><select id="poterylike" name="comicslike">
+              <option value="" default>N/A</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Don't known">Don't Known</option>
+            </select>
+            <br><br>
+
+            <span>4.Size of books should be:<font color="red">*</font></span><br><select id="bookSize" name="bookSize">
+              <option value="" default>N/A</option>
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Big">Big</option>
+              <option value="Nomatter">Does not matter</option>
+            </select>
+            <br><br>
+
+            <span>5.Name of Favourite Book:<font color="red">*</font></span><br>
+            <input type="text" name="favBookName" placeholder="Eg : The Fault in Our Stars" /><br><br>
+
+            <span>6.Name of Favourite Author:<font color="red">*</font></span><br>
+            <input type="text" name="favauthorName" placeholder="Eg : J. K. Rowling" /><br><br>
+
+            <input type="submit" name="booksubmit" value="Save" class="btn green">
+
+          </form>
+
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>
+            <center><span class="bookshead">Music</span></center>
+          </h1>
+          <form class="formSongs" action="../php/choices.php" method="POST">
+            <span>1. Which languages of Songs do like to listen: <font color="red">*</font>
+            </span><br><select id="songslanguage" name="songslanguage">
+              <option value="" default>N/A</option>
+              <option value="Engish">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Others">Others</option>
+            </select><br><br>
+
+            <span> 2. What is Genre of Songs you like:<font color="red">*</font></span><br><select id="songsgenre"
+              name="songsgenre">
+              <option value="" default>N/A</option>
+              <option value="Classical">Classical</option>
+              <option value="Romantic">Romantic</option>
+              <option value="Silent">Silent</option>
+              <option value="Melody">Melody</option>
+              <option value="Sad">Sad</option>
+              <option value="Rap">Rap</option>
+              <option value="Devotional">Devotional</option>
+              <option value="HipHop">HipHop</option>
+            </select><br><br>
+            <span>3.Do you like poetry:<font color="red">*</font></span><br><select id="poterylike" name="poterylike">
+              <option value="" default>N/A</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Don't known">Don't Known</option>
+            </select>
+            <br><br>
+            <span>4.Do you attend Musical Concert:<font color="red">*</font></span><br><select id="Concert"
+              name="concert">
+              <option value="" default>N/A</option>
+              <option value="Frequently">Frequently</option>
+              <option value="occasionally">Occasionally</option>
+              <option value="onces">Only one time</option>
+              <option value="No">No</option>
+            </select>
+            <br><br>
+            <span>5.Name of Favourite Song:<font color="red">*</font></span><br>
+            <input type="text" name="favSongName" placeholder="Eg : Apna Time Aayega" /><br><br>
+            <span>6.Name of Favourite Singer:<font color="red">*</font></span><br>
+            <input type="text" name="favSingerName" placeholder="Eg : Arjit Singh" /><br><br>
+
+            <input type="submit" name="songsubmit" value="Save" class="btn green">
+
+          </form>
+        </div>
+
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>
+            <center><span>Movies</span></center>
+          </h1>
+          <form action="../php/choices.php" method="POST">
+            <span>1. Which languages of Movies do like to Watch:<font color="red">*</font>
+            </span><br><select id="movielanguage" name="movielanguage">
+              <option value="" default>N/A</option>
+              <option value="Engish">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Others">Others</option>
+            </select><br><br>
+
+            <span>2. What are Genre of the Movies you like: <font color="red">*</font></span><br><select id="moviegenre"
+              name="moviegenre">
+              <option value="" default>N/A</option>
+              <option value="Fictional">Fictional</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Horror">Horror</option>
+              <option value="Action">Action</option>
+              <option value="SuperHero">Super Hero</option>
+              <option value="Romantic">Romantic</option>
+              <option value="Biographical">Biographical</option>
+              <option value="Darma">Drama</option>
+            </select><br><br>
+
+            <span>3.Do you like Animated Movies:<font color="red">*</font></span><br><select id="animation"
+              name="animation">
+              <option value="" default>N/A</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Don't known">Don't Known</option>
+            </select>
+            <br><br>
+
+            <span>4.Where do you like to watch movie:<font color="red">*</font></span><br><select id="moviewhere"
+              name="moviewhere">
+              <option value="" default>N/A</option>
+              <option value="home">At home</option>
+              <option value="movietheater">Movie Theater</option>
+              <option value="withfriends">With Friends</option>
+              <option value="Nomatter">Does not matter</option>
+            </select>
+            <br><br>
+
+            <span>5.Name of Favourite Movie:<font color="red">*</font></span><br>
+            <input type="text" name="favmovieName" placeholder="Eg : Bahubali" /><br><br>
+
+            <span>6.Name of Favourite Director:<font color="red">*</font></span><br>
+            <input type="text" name="favdirectorName" placeholder="Eg : Rohit Shetty" /><br><br>
+
+            <input type="submit" name="moviesubmit" value="Save" class="btn green">
+
+          </form>
+
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>
+            <center><span class="bookshead">Travel</span></center>
+          </h1>
+          <form class="formTravel" action="../php/choices.php" method="POST">
+            <span class="section">1. You preferred to travel <font color="red">*</font></span><br><select
+              id="traveltype" name="traveltype">
+              <option value="" default>N/A</option>
+              <option value="alone">Alone</option>
+              <option value="friends">With Friends</option>
+              <option value="family">With Family</option>
+            </select><br><br>
+
+            <span class="section"> 2. What are types of places do you like to travel: <font color="red">*</font>
+            </span><br><select id="travelgenre" name="travelgenre">
+              <option value="" default>N/A</option>
+              <option value="historic">Historic</option>
+              <option value="romantic">Romantic</option>
+              <option value="modern">Modern Architecture</option>
+              <option value="nature">Nature</option>
+              <option value="musume">Musume</option>
+              <option value="other">other</option>
+            </select><br><br>
+
+            <span class="section">3.Do you like to travel:<font color="red">*</font></span><br><select id="travellike"
+              name="travellike">
+              <option value="" default>N/A</option>
+              <option value="veryoften">Very Often</option>
+              <option value="ocassionally">ocassionally</option>
+              <option value="notsure">Not Sure</option>
+            </select>
+            <br><br>
+
+            <span class="section">4.Where do you like to travel:<font color="red">*</font></span><br><select
+              id="travellocation" name="travellocation">
+              <option value="" default>N/A</option>
+              <option value="homecountry">Within Country</option>
+              <option value="outsidecountry">Outside Country</option>
+              <option value="notsure">Not Sure</option>
+            </select>
+            <br><br>
+
+
+            <span class="section">5.Name of Favourite Travel Location:<font color="red">*</font></span><br>
+            <input type="text" name="favTravelLocation" placeholder="Eg : London" /><br><br>
+
+            <span class="section">6.Name of Favourite Traveller:<font color="red">*</font></span><br>
+            <input type="text" name="favTravelPersonName" placeholder="Eg : Drewn Bisky" /><br><br>
+
+            <input type="submit" name="travelsubmit" value="Save" class="btn green">
+
+
+          </form>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>
+            <center><span class="bookshead">Sports</span></center>
+          </h1>
+          <form class="formSports" action="../php/choices.php" method="POST">
+            <span class="section">1. What type of sports you like <font color="red">*</font></span><br><select
+              id="sportlike" name="sportlike">
+              <option value="" default>N/A</option>
+              <option value="indoor">Indoor</option>
+              <option value="Outdoor">Outdoor</option>
+              <option value="Others">Others</option>
+            </select><br><br>
+
+            <span class="section"> 2. Which Sport you like the most: <font color="red">*</font></span><br><select
+              id="sportgenre" name="sportgenre">
+              <option value="" default>N/A</option>
+              <option value="cricket">Cricket</option>
+              <option value="hockey">Hockey</option>
+              <option value="Kabaddi">Kabaddi</option>
+              <option value="football">Football</option>
+              <option value="tennis">Tennis</option>
+              <option value="basketball">Basketball</option>
+              <option value="other">other</option>
+            </select><br><br>
+
+            <span class="section">3.How often do you play sports:<font color="red">*</font></span><br><select
+              id="sportplayes" name="sportplayes">
+              <option value="" default>N/A</option>
+              <option value="veryoften">Very Often</option>
+              <option value="ocassionally">ocassionally</option>
+              <option value="never">Never</option>
+              <option value="notsure">Not Sure</option>
+            </select>
+            <br><br>
+
+            <span class="section">4.Where do you like to watch sports:<font color="red">*</font></span><br><select
+              id="sportwatch" name="sportwatch">
+              <option value="" default>N/A</option>
+              <option value="home">At Home</option>
+              <option value="stadium">Stadium</option>
+              <option value="hotal">Hotel</option>
+              <option value="notsure">Not Sure</option>
+            </select>
+            <br><br>
+
+
+            <span class="section">5.Name of Sport you like to play:<font color="red">*</font></span><br>
+            <input type="text" name="favSportName" placeholder="Eg : Cricket" /><br><br>
+
+            <span class="section">6.Name of Favourite Sportsmen:<font color="red">*</font></span><br>
+            <input type="text" name="favSportPersonName" placeholder="Eg : MS Dhoni" /><br><br>
+
+            <input type="submit" name="sportsubmit" value="Save" class="btn green">
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <label for="r1" class="bar">Books</label>
+      <label for="r2" class="bar">Music</label>
+      <label for="r3" class="bar">Movies</label>
+      <label for="r4" class="bar">Travel</label>
+      <label for="r5" class="bar">Sports</label>
+    </div>
+  </div>
+
+  <button class="match" name="findMatch" onclick="window.location.href ='../php/demo.php'">Find Match</button>
+
+</body>
+
+</html>

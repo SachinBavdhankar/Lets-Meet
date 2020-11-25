@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/shome.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/register-icon.png" type="image/x-icon">
+    <title>Let's Meet Up | Register</title>
+</head>
+
+<body class="registerBody">
+    <header>
+        <nav id="navBar">
+            <ul>
+                <li><a href="./LMHome.html">Home</a></li>
+                <li><a href="./Tutorial.html">Tutorial</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="name">
+            <h1>Let's Meet up</h1>
+
+        </div>
+    </header>
+
+    <section align="center">
+        <div class="register">
+            <div class="loginform" align="center">
+                <p><b>
+                        <h3><i>Enter Details Below for Registration Purpose</i></h3>
+                    </b></p>
+                <form class="formRegister" action="../php/insert.php" method="POST">
+                    <b>
+                        <h3>
+                            <legend>Your Basic Information</legend>
+                        </h3>
+                    </b> First Name
+                    <font color="red">*</font>
+                    <input type="text" name="txtFirstName" placeholder="Eg : Harry" pattern="[A-Za-z]{2,12}"
+                        title="Enter your First name with length less than 12" required /><br><br> Last Name
+                    <font color="red">*</font>
+                    <input type="text" name="txtLastName" placeholder="Eg : Potter" pattern="[A-Za-z]{2,12}"
+                        title="Enter your Last name with length less than 12" required />
+                    <br><br> Username
+                    <font color="red">*</font>
+                    <input type="text" name="txtUserName" placeholder="Eg : IloveYou3000" pattern="[a-zA-Z0-9]+"
+                        minlength="6" maxlength="18"
+                        title="Username should have of minimum 6 and maximum 18 and it can have A-Z,a-z,0-9" required />
+                    <br><br> Password
+                    <font color="red">*</font>
+                    <input type="password" name="txtPassword" placeholder="Eg : passCode"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required /> <br><br> Email
+                    <font color="red">*</font><br>
+                    <input type="email" name="emailAddress" placeholder="Eg : billgates@hotmail.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /> <br><br> DoB
+                    <font color="red">*</font><br>
+                    <input type="date" name="dateDob" required /> <br><br> Gender
+                    <font color="red">*</font>
+                    <input type="radio" name="rdGender" value="Male" checked> Male
+                    <input type="radio" name="rdGender" value="Female"> Female
+                    <input type="radio" name="rdGender" value="Others"> Other <br><br>
+                    City <br> <input type="text" name="cityName" placeholder="Eg : Pune" pattern="[A-Za-z]{2,12}"
+                        title="Enter your City name with length less than 12" /><br><br> Facebook Profile Link
+                    <br><input type="text" name="fbLink" placeholder="Eg : " pattern="/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-
+                    9+&@#\/%=~_|]/i" /> <br><br>
+                    Instagram Profile Link
+                    <br><input type="text" name="instagramLink" placeholder="Eg : " pattern="/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-
+                    9+&@#\/%=~_|]/i" /> <br><br>
+                    <input class="submitButton" type="submit" value="Submit" name="buttonSubmit" />
+                    <input class="resetButton" type="reset" value="Reset" name="buttonReset" />
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>

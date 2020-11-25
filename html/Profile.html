@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/shome.css"> -->
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Let's Meet Up</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <ul>
+                <li><a href="./LMHome.html">Home</a></li>
+                <li><a href="./Tutorial.html">Tutorial</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="name">
+            <h1>Let's Meet up</h1>
+        </div>
+    </header>
+    <script src="../js/main.js"></script>
+    <div class="buttons">
+        <button class="btn profile" name="profilebtn" onclick="updateProfile()">Update Profile</button>
+        <button class="btn choice" name="choicebtn" onclick="window.location.href='./Choices.html'">Update
+            Choices</button>
+        <button class="btn show" name="showbtn" onclick="showFriends()">Show Friends</button>
+        <button class="btn delete" name="deletebtn" onclick="deleteProfile()">Delete Profile</button>
+        <button class="btn log" name="logbtn" onclick="logout()">Log out</button>
+    </div>
+    <div class="frames">
+        <iframe src="UpdateProfile.html" class="frameProfile hide"></iframe>
+        <iframe src="../php/Usermatches.php" class="frameShow hide"></iframe>
+    </div>
+</body>
+
+</html>

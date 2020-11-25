@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="../php/update_profile.php" method="post">
+            <span>First Name : </span>
+            <input type="text" name="txtFirstname"><br><br>
+            <span>Last Name : </span>
+            <input type="text" name="txtLastname"><br><br>
+            <span>Username : </span>
+            <input type="text" name="txtUsername"><br><br>
+            <span>Password : </span>
+            <input type="password" name="txtPassword"><br><br>
+            <input type="submit" value="Update" name="btnSubmit" class="btn sub">
+            <input type="reset" value="Reset" name="btnReset" class="btn res">
+        </form>
+    </div>
+</body>
+
+</html>

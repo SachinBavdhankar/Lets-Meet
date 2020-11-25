@@ -1,0 +1,577 @@
+header {
+    /* this is for the navBar resizing */
+    height: 65px;
+    background: black;
+    margin-top: -15px;
+    width: 100%;
+}
+.homeBody{
+	overflow-x:hidden;
+}
+.ClearBuffer {
+    clear: both;
+}
+
+header .name {
+    margin-top: 10px;
+}
+
+header .name h1 {
+    color: white;
+    font-style: italic;
+    padding: 14px 16px;
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: -15px;
+    padding: -10px;
+    overflow: hidden;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 14px 16px;
+    padding-right: 35px;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    background-color: grey;
+}
+
+.banner {
+    margin-top: -60px;
+    height: 550px;
+    width: 100%;
+    background-image: url("../images/friend.jpg");
+    background-position: center;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic|bold;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: blue;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.submit {
+    margin-left: 500px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-style: bold|italic;
+    font-weight: 1000;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.submit:hover {
+    background-color: #f5992b;
+    color: white;
+}
+
+.login {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-style: bold|italic;
+    border: 5px solid white;
+    font-weight: 1000;
+    border-radius: 20px;
+}
+
+.login:hover {
+    background-color: #cff20c;
+    color: #242523;
+}
+
+.registerBody {
+    background-position: center;
+    background-image: url("../images/register.jpg");
+}
+
+.loginform {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    margin-left: 430px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border-style: solid;
+}
+
+.loginpage {
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    margin-top: 68px;
+    margin-left: 430px;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.loginimage {
+    height: 135%;
+    width: 100%;
+}
+
+.loginBack {
+    font-size: 1.1em;
+    font-family: 'EB Garamond', serif;
+    background-image: url("../images/login.png");
+    background-position: center;
+}
+
+section h3 {
+    text-align: center;
+}
+
+.sbutton {
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+    font-size: 20px;
+    font-style: bold|italic;
+    border: 5px solid white;
+    font-weight: 1000;
+    border-radius: 20px;
+    background-color: #57df2e;
+    color: #242523;
+}
+
+.rbutton:focus {
+    box-shadow: 0 0 5px #392bf5;
+    border: 1px solid #392bf5;
+}
+
+.loginButton {
+    width: 75%;
+    min-height: 35px;
+    margin-top: 5px;
+    background: #4ff249;
+    font-family: verdana;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    cursor: pointer;
+    outline: none;
+}
+
+.submitButton {
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    background: #4ff249;
+    font-family: verdana;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 8px 8px 2px #8888888a;
+}
+
+.resetButton {
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    background: #df2020;
+    font-family: verdana;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 8px 8px 2px #8888888a;
+}
+
+.rbutton {
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-style: bold|italic;
+    border: 5px solid white;
+    font-weight: 1000;
+    border-radius: 20px;
+    background-color: #e71d1d;
+    color: #fafafa;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    width: 75%;
+    box-shadow: 0 1px 0 rgb(0, 0, 0, 0.3) inset;
+    background-color: #f5f3759d;
+    /* Change this color into whatever you like*/
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0 4px 8px 0;
+    padding: 15px;
+    box-shadow: 0 1px 0 rgb(0, 0, 0, 0.3) inset;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+legend {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.section {
+    background-color: #7C1616;
+    height: 30px;
+    width: auto;
+    display: inline-block;
+    margin-right: 6px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    padding-left: 15px;
+}
+
+.bookshead {
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+    margin-right: 6px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #2ba4f5;
+    border: 1px solid #2ba4f5;
+}
+
+.formRegister {
+    font-size: 1.1em;
+    font-family: 'EB Garamond', serif;
+}
+
+.bookAndMusicBack {
+    background-image: url("../images/bricks.jpg");
+    font-size: 1.1em;
+    font-family: 'EB Garamond', serif;
+}
+
+.moviesAndGames {
+    background-image: url("../images/bricks.jpg");
+    font-size: 1.1em;
+    font-family: 'EB Garamond', serif;
+}
+
+.Book {
+    background-image: url("../images/books.jpg");
+    margin-top: 70px;
+    margin-left: 35px;
+    padding-left: 10px;
+    float: left;
+    width: 45%;
+    height: 30%;
+    box-shadow: 10px 10px 5px #8888888a;
+    border-radius: 8px;
+    color: white;
+    font-style: bold;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.Book input[type="text"],
+select {
+    background-color: #F9F1F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: 3px;
+    width: auto;
+    height: auto;
+}
+
+.Songs input[type="text"],
+select {
+    background-color: #F9F1F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: 3px;
+    width: auto;
+    height: auto;
+}
+
+.Sports input[type="text"],
+select {
+    background-color: #F9F1F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: 3px;
+    width: auto;
+    height: auto;
+}
+
+.Movies input[type="text"],
+select {
+    background-color: #F9F1F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: 3px;
+    width: auto;
+    height: auto;
+}
+
+.Songs {
+    background-image: url("../images/song.jpg");
+    margin-top: 70px;
+    margin-right: 35px;
+    padding-left: 10px;
+    float: right;
+    width: 45%;
+    height: 30%;
+    box-shadow: 10px 10px 5px #8888888a;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.Movies {
+    background-image: url("../images/movies.jpg");
+    background-color: #e8a87c;
+    margin-top: 70px;
+    margin-left: 35px;
+    padding-left: 10px;
+    float: left;
+    width: 45%;
+    height: 30%;
+    box-shadow: 10px 10px 5px #8888888a;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.Sports {
+    background-image: url("../images/games.jpg");
+    background-color: rgb(146, 120, 155);
+    margin-top: 70px;
+    margin-right: 35px;
+    padding-left: 10px;
+    float: right;
+    width: 45%;
+    height: 30%;
+    box-shadow: 10px 10px 5px #8888888a;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.bookNext {
+    margin-left: 520px;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-style: bold|italic;
+    border: 5px solid white;
+    font-weight: 1000;
+    border-radius: 20px;
+    background-color: #57df2e;
+    color: #242523;
+    box-shadow: 10px 10px 5px #8888888a;
+    margin-top: 100px;
+}
+
+.bookReset {
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-style: bold|italic;
+    border: 5px solid white;
+    font-weight: 1000;
+    border-radius: 20px;
+    background-color: #e71d1d;
+    color: #fafafa;
+    box-shadow: 10px 10px 5px #8888888a;
+}
+
+.bookNext:hover,
+.bookReset:hover,
+.sbutton:hover,
+.rbutton:hover {
+    cursor: pointer;
+}
+
+.bookNext:active,
+.bookReset:active,
+.sbutton:active,
+.rbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.forgotPassword {
+    width: 40%;
+    padding-top: 10px;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    min-height: 150px;
+    background-color: whitesmoke;
+}
+
+.forMail {
+    margin-top: 15px;
+}
+
+.forEmailName {
+    margin-top: 10px;
+}
+
+.forButton {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 95px;
+    min-height: 35px;
+    background: #215ad4;
+    font-family: verdana;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* Media */
+
+@media(max-width:760px) {
+    .submit {
+        float: none;
+        margin-left: 125px;
+    }
+    .login {
+        float: none;
+    }
+    .name h1 {
+        font-size: 20px;
+    }
+    .loginpage {
+        margin-left: 150px;
+        width: 50%;
+        height: 380px;
+    }
+    .loginButton {
+        width: 50%;
+    }
+    .loginform {
+        margin-left: 120px;
+        width: 60%;
+    }
+    .Music,
+    .Book,
+    .Movie,
+    .Travel {
+        float: none;
+        margin-left: 50px;
+        /* margin-top: 60px; */
+    }
+    .bookNext {
+        float: none;
+        margin-left: 80px;
+    }
+}

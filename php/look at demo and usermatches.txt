@@ -1,0 +1,61 @@
+<?php
+$username = "root";
+$servername = "localhost";
+$password = "";
+$dbname = "letmeet";
+
+$connection = @mysqli_connect($servername,$username,$password,$dbname);
+
+
+if ($connection) {
+	
+	echo "Connection OK";
+}
+
+else
+{
+	die("Connection failed because ". mysqli_connect_error());
+}
+
+
+   
+
+
+
+
+
+if($_POST['buttonSubmit'])
+{
+    
+    //$userid = $num++; 
+	$fname = $_POST['txtFirstName'];
+    $lname = $_POST['txtLastName'];
+    $Uname = $_POST['txtUserName'];
+    $password = $_POST['txtPassword'];
+    $email = $_POST['emailAddress'];
+    $date = $_POST['dateDob'];
+    $gender = $_POST['rdGender'];
+    $city = $_POST['cityName'];
+    $fblink = $_POST['fbLink'];
+    $instagram = $_POST['instagramLink'];
+
+    //echo $userid;
+
+
+    $guery1 = "insert into user values('$fname','$lname','$Uname','$password','$email','$date','$gender','$city','$fblink','$instagram')";
+    $data = mysqli_query($connection,$guery1);
+
+    //if($data)
+    //{
+        echo "Data Inserted";
+    //}
+}
+
+
+
+
+
+?>
+
+
+INSERT INTO `user` (`userid`, `fname`, `lname`, `username`, `password`, `email`, `dob`, `gender`, `city`, `fblink`, `instagramlink`) VALUES (NULL, 'dsad', 'sdasd', 'sdasdasd', 'dADASDSD', 'chandra492bavdhankar@gmail.com', '2019-10-02', 'Other', 'PUNE', 'SDSAD', 'SDASD');

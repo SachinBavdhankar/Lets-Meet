@@ -1,0 +1,70 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #d1ccc013;
+    overflow-x: hidden;
+}
+
+.heading-1 {
+    /* position: absolute; */
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #F79F1F;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    font-family: 'Grenze', serif;
+    border: 2px solid #EE5A24;
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    /* border-style: dashed; */
+    /* border-color: red; */
+}
+
+.heading-1 h1 {
+    text-align: center;
+    position: relative;
+    top: -55px;
+    /* border-style: dashed; */
+}
+
+.texts {
+    margin-top: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15pt;
+}
+
+.community-img {
+    /* border-style: dashed; */
+    margin-top: 25px;
+    text-align: center;
+}
+
+.community-img img {
+    height: 200px;
+    width: 98%;
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.texts.v2 {
+    /* border-style: dashed; */
+    height: 50pt;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #10ac84;
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.texts.v2 h3 {
+    /* border-style: dashed; */
+    position: relative;
+    top: 20px;
+}

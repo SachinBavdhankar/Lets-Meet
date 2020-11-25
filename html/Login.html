@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/shome.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/login-icon.png" type="image/x-icon">
+    <title>Let's Meet Up Login</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <ul>
+                <li><a href="./LMHome.html">Home</a></li>
+                <li><a href="./Tutorial.html">Tutorial</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="name">
+            <h1>Let's Meet up</h1>
+        </div>
+    </header>
+
+    <section id="mainLogin">
+        <div class="container">
+            <h2><span>LOGIN</span></h2>
+            <form action="../php/login.php" method="POST">
+                <i class="fa fa-user icon"></i>
+
+                <input type="text" name="txtUsername" pattern="[a-zA-Z0-9]+" minlength="6" maxlength="18"
+                    placeholder="Enter Username" onfocus="this.placeholder='' "
+                    onblur="this.placeholder='Enter Username'" required />
+                <br />
+                <i class="fa fa-key icon"></i>
+                <input type="password" name="txtPassword" placeholder="Enter Password" onfocus="this.placeholder='' "
+                    onblur="this.placeholder='Enter Password'" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required />
+                <br />
+                <input class="btn green" type="submit" value="Login" name="logins" />
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
